@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    /* Colors */
+    --primary-color: #2a9d8f;
+    --secondary-color: #3a86ff;
+    --third-color: #e63946;
+    --background-color: #264653;
+    --background-card-color: #141d30;
+    --white: #FFF;
+    --black: #000;
+    /* Fonts */
+    --primary-font: 'Montserrat', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100dvh - 8rem);
+    padding: 4rem 1rem;
+}
+
+.timer {
+    width: 236px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    background-color: var(--background-card-color);
+}
+
+.timer-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+#hours,
+#minutes,
+#seconds {
+    width: 58px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.timer-buttons {
+    width: 233px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer-buttons button {
+    width: 70px;
+    height: 35px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-start {
+    color: var(--primary-color);
+}
+
+.btn-start:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.btn-pause {
+    color: var(--secondary-color);
+}
+
+.btn-pause:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
+}
+
+.btn-reset {
+    color: var(--third-color);
+}
+
+.btn-reset:hover {
+    background-color: var(--third-color);
+    color: var(--white);
+    border-color: var(--third-color);
+}
